@@ -25,21 +25,6 @@
                 android:value=".SearchResultsActivity" />
         </activity>
 
-        <activity android:name=".SearchResultsActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme"
-            android:parentActivityName=".MainActivity">
-            <intent-filter>
-                <action android:name="android.app.searchable"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-
-            <meta-data
-                android:name="android.app.searchable"
-                android:value=".MainActivity"
-                android:resource="@xml/searchable" />
-        </activity>
-
         <activity android:name=".LoginActivity"
             android:theme="@style/AppTheme.Login"></activity>
 
@@ -50,7 +35,7 @@
             android:name=".ChatActivity"
             android:label="@string/app_chat"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.Login">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"
@@ -89,14 +74,13 @@
         </activity>
 
         <activity android:name=".SettingsActivity"
-<<<<<<< HEAD
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-=======
-            android:theme="@style/AppTheme"></activity>
+            android:label="@string/app_settings"
+            android:theme="@style/AppTheme.Login"></activity>
 
         <activity
             android:name=".ChatFunction"
             android:label="Chat"
+            android:theme="@style/AppTheme"
             android:parentActivityName=".ChatActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
@@ -104,7 +88,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ChatActivity" />
         </activity>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
->>>>>>> refs/remotes/ucsdCSE110wi16/master
     </application>
 </manifest>
